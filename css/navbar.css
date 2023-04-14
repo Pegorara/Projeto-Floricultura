@@ -1,0 +1,49 @@
+header{
+    display: flex;
+    width: 65vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 30rem;
+    height: fit-content;
+    align-items: center;
+    gap: 1rem;
+}
+
+#navbar a {
+    text-decoration: none;
+    width: fit-content;
+}
+
+#navbar button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+    color: #2D3648;
+    background-image: url("../images/svgs/user-circle.svg");
+}
+
+.logoLocal{
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.logoLocal h1{
+    font-size: 2rem;
+}
+
+#logo{
+    width: 4.2rem;
+}

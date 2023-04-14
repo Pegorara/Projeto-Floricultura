@@ -5,9 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Taldas Flores</title>
 </head>
 <body>
+    <header>
+        <div class="logoLocal">
+            <img id="logo" src="./images/hibisco.png" alt="Logo">
+            <h1>Taldas Flores</h1>
+        </div>
+        <nav id="navbar">
+        </nav>
+    </header>
+    <!-- <section id="carrosselLocal">
+        <div class="carrossel">
+            <img id="imageLocal">
+            <div class="buttonsLocal"></div>
+        </div>
+    </section> -->
     
+    <div class="w3-container" style="display: flex; justify-content: center;">
+        <img src="./images/carrosel.png" style="max-width: 65vw;" alt="">
+    </div>
+    <div class="divElipse">
+        <span class="elipse"></span>
+        <span class="elipse"></span>
+        <span class="elipse"></span>
+    </div>
+    <!-- <button id="abrirModal">Abrir modal</button> -->
+
+    <div class="w3-container" style="display: flex; justify-content: center;">
+        <h2 style="width: 65vw">Destaques</h2>
+    </div>
+
+    <div class="w3-container" id="destaques">
+        <div class="w3-container" id="listaDestaque">
+            <div class="produtoDestaque">
+                <img class="imagemProduto" src="./images/produto.png">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <div>
+                    <h4>R$ 30,00</h4>
+                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                </div>
+            </div>
+            <div class="produtoDestaque">
+                <img class="imagemProduto" src="./images/produto.png">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <div>
+                    <h4>R$ 30,00</h4>
+                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                </div>
+            </div>
+            <div class="produtoDestaque">
+                <img class="imagemProduto" src="./images/produto.png">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <div>
+                    <h4>R$ 30,00</h4>
+                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                </div>
+            </div>
+            <div class="produtoDestaque">
+                <img class="imagemProduto" src="./images/produto.png">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <div>
+                    <h4>R$ 30,00</h4>
+                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalProduto" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="" id="headerModalProduto">
+            <p id="nomeProduto">Nome do Produto</p>
+            <button class="w3-button" id="fecharModalProduto">&times;</button>
+          </div>
+          <div class="w3-container" id="fotoProduto">
+            <img src="./images/WF Image Placeholder.png" alt="Imagem do produto" id="imagemProduto">
+          </div>
+          <div class="w3-container">
+              <p style="margin: 0;">DESCRIÇÃO</p>
+          </div>
+          <div class="w3-container">
+            <p id="descricaoProduto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe hic explicabo accusantium nesciunt beatae ad odio fuga modi facere voluptatem autem dolorem deserunt quasi in, recusandae pariatur, dolores dignissimos aperiam!
+            </p>
+          </div>
+          <footer id="footerModalProduto">
+            <p id="precoModalProduto">R$ 00,00</p>
+            <button id="buttonFooterProduto">
+                <img src="/images/svgs/outline-shopping-cart.svg" alt="">
+                Adicionar ao carrinho
+            </button>
+          </footer>
+        </div>
+    </div>
+
+
+    <script src="./views/header.js"></script>
+    <script src="./views/modalProduto.js"></script>
 </body>
 </html>

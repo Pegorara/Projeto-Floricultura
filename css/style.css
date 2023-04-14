@@ -1,0 +1,30 @@
+@import "navbar.css";
+@import "modalProduto.css";
+@import "produtoDestaque.css";
+@import "carrossel.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  font-family: Inter;
+}
+
+.divElipse {
+  display: flex; 
+  gap: 10px; 
+  justify-content: center; 
+  margin-top: 10px;
+}
+
+.elipse { 
+  background: black;
+  width: 7px;
+  height: 7px;
+  border-radius: 50px;
+}
