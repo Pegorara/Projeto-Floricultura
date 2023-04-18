@@ -1,0 +1,67 @@
+#headerSidebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+#tituloSidebar {
+  font-size: 1.5rem;
+}
+
+#fecharCarrinho {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  height: 35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#retangulo {
+  position: absolute;
+  top: 40px;
+  width: 35%;
+  height: 2px;
+  background: #2D3648;
+}
+
+.produtoCarrinho {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  margin: 10px 0;
+}
+
+.fotoProdutoCarrinho {
+  max-width: 30%;
+}
+
+.infosProdutoCarrinho {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 5px;
+}
+
+.excluirItem {
+  display: flex;
+  justify-content: center;;
+  align-self: center;
+  background: none;
+  padding: 5px 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.excluirItem img {
+  width: 1.5rem;
+}
+
+.controles {
+  display: flex;
+  gap: 10px;
+  align-self: center;
+  padding: 0 5px;
+}
