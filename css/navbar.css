@@ -1,17 +1,15 @@
-header{
+ header{
     display: flex;
-    width: 65vw;
     margin: auto;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    justify-content: space-between;
+    width: 60vw;
 }
 
 #navbar{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 30rem;
     height: fit-content;
     align-items: center;
     gap: 1rem;
