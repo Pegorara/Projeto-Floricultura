@@ -3,8 +3,14 @@
 @import "produtoDestaque.css";
 @import "carrossel.css";
 
-
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: "Taldas";
+  src: url("./TaldasFont.ttf");
+}
+
 
 body{
   display: flex;
@@ -15,6 +21,9 @@ body{
   font-family: Inter;
 }
 
+h2{
+  font-family: "Dancing Script";
+}
 .divElipse {
   display: flex; 
   gap: 10px; 
@@ -27,4 +36,8 @@ body{
   width: 7px;
   height: 7px;
   border-radius: 50px;
+}
+
+section{
+  width: calc(75vw - 3rem);
 }

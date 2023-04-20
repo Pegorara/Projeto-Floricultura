@@ -6,6 +6,15 @@
     width: 60vw;
 }
 
+#menu{
+    background-image: url("../images/svgs/menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+}
+
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -31,17 +40,6 @@
     color: #2D3648;
     background-image: url("../images/svgs/user-circle.svg");
 }
-
-.logoLocal{
-    display: flex;
-    text-transform: uppercase;
-    align-items: center;
-}
-
-.logoLocal h1{
-    font-size: 2rem;
-}
-
 #logo{
-    width: 4.2rem;
+    width: 15rem;
 }

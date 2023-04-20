@@ -1,5 +1,6 @@
 const logo = document.querySelector("#logo");
 const navbar = document.querySelector("#navbar");
+const navDown = document.querySelector("#navDown");
 
 const navOptions = [
     {
@@ -47,6 +48,10 @@ function renderHeader(){
             navbar.appendChild(button);
         }
     }
+}
+
+function dropdown(){
+    navDown.classList.toggle("w3-show");
 }
 
 renderHeader();

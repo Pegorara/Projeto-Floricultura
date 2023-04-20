@@ -1,46 +1,56 @@
 #destaques {
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 60vw;
 }
 
 #listaDestaque {
   display: flex;
-  justify-content: space-evenly;
-  width: 65vw;
-  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .produtoDestaque {
-  border: 1px solid black;
-  max-width: 15vw;
+  max-width: 15rem;
+  width: calc(100%/4);
+  min-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.3rem;
+}
+.valueLocal{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
 }
 
 .produtoDestaque img {
-  max-width: 15vw;
+  max-width: 15rem;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .produtoDestaque h4 {
-  background: #717D96;
-  padding: 5px 10px;
   max-width: fit-content;
-  border-radius: 4px;
 }
 
 .produtoDestaque p {
-  padding: 0;
-  margin: 0px 10px;
-}
-
-.produtoDestaque div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5px 10px;
+  text-align: center;
 }
 
 .produtoDestaque .addToCart {
-  background: #1A202C;
   height: fit-content;
-  padding: 10px;
+  border: none;
   border-radius: 5px;
+  background-color: rgb(85, 207, 85);
+  padding: 0.2rem 1rem;
+}
+
+.produtoDestaque .addToCart:active{
+  background-color: rgb(0, 143, 31);
 }
