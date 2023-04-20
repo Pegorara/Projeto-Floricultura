@@ -1,5 +1,5 @@
 #destaques {
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,12 +10,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap:1rem
 }
 
 .produtoDestaque {
   max-width: 15rem;
   width: calc(100%/4);
-  min-width: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,4 +53,20 @@
 
 .produtoDestaque .addToCart:active{
   background-color: rgb(0, 143, 31);
+}
+
+@media (max-width: 992px) {
+  #destaques{
+    width: 100vw;
+  }
+
+  .produtoDestaque{
+    min-width: 10.2rem;
+    width: 45%;
+  }
+
+  .produtoDestaque h4, .produtoDestaque p{
+    font-size: calc(1rem);
+  }
+
 }

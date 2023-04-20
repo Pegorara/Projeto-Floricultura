@@ -2,6 +2,7 @@
 @import "modalProduto.css";
 @import "produtoDestaque.css";
 @import "carrossel.css";
+@import "modalCarrinho.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
@@ -38,6 +39,15 @@ h2{
   border-radius: 50px;
 }
 
-section{
-  width: calc(75vw - 3rem);
+#carrinho {
+  position: fixed;
+  top: 15%;
+  right: 0;
+  background: whitesmoke;
+  padding: 1rem 1.3rem 1rem 1rem;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.233);
 }

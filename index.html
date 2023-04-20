@@ -9,21 +9,21 @@
     <title>Taldas Flores</title>
 </head>
 <body>
-    <header>
-            <img id="logo" src="./images/logo.png" alt="Logo">
-        <nav id="navbar" class="w3-container w3-hide-medium w3-hide-small">
+    <header id="header">
+        <img id="logo" src="./images/logo.png" alt="Logo">
+        <nav id="navbar" class="w3-hide-medium w3-hide-small">
         </nav>
         <div class="w3-dropdown-click w3-right w3-hide-large">
             <button id="menu" onclick="dropdown()" class="w3-button"></button>
             <div id="navDown" class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
-              <a href="#" class="w3-bar-item w3-button">Link 1</a>
-              <a href="#" class="w3-bar-item w3-button">Link 2</a>
-              <a href="#" class="w3-bar-item w3-button">Link 3</a>
+              <a href="#" class="w3-bar-item w3-button">Destaques</a>
+              <a href="#" class="w3-bar-item w3-button">Catálogo</a>
+              <a href="#" class="w3-bar-item w3-button">Sobre nós</a>
             </div>
           </div>
     </header>
 
-    <section id="carrosselLocal" class="w3-container" style="margin: 0 auto;">
+    <section id="carrosselLocal" style="margin: 0 auto;">
         <div class="carrossel">
             <img id="imageLocal">
             <div id="buttonsLocal"></div>
@@ -76,6 +76,50 @@
         </div>
     </div>
 
+
+
+    <!-- Modais aqui -->
+    <button id="carrinho" onclick="showCarrinho()"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-right w3-card" id="mySidebar">
+        <div id="headerSidebar">
+            <span id="tituloSidebar">Carrinho</span>
+            <span id="retangulo"></span>
+            <button onclick="showCarrinho()" id="fecharCarrinho">&times;</button>
+        </div>
+        <div class="produtoCarrinho w3-card">
+            <img class="fotoProdutoCarrinho" src="./images/flowers/astromelia/001.jpg" alt="">
+            <div class="infosProdutoCarrinho">
+                <b>Astromélia</b>
+                <span>R$ 30,00</span>
+            </div>
+
+            <div class="controles">
+                <span>-</span>
+                <span>1</span>
+                <span>+</span>
+            </div>
+
+            <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
+        </div>
+        <div class="produtoCarrinho w3-card">
+            <img class="fotoProdutoCarrinho" src="./images/flowers/batoes/001.jpg" alt="">
+            <div class="infosProdutoCarrinho">
+                <b>Batões</b>
+                <span>R$ 30,00</span>
+            </div>
+
+            <div class="controles">
+                <span>-</span>
+                <span>1</span>
+                <span>+</span>
+            </div>
+
+            <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
+        </div>
+      </div>
+
     <div id="modalProduto" class="w3-modal">
         <div class="w3-modal-content">
           <div class="" id="headerModalProduto">
@@ -107,5 +151,6 @@
     <script src="./views/header.js"></script>
     <script src="./views/carrossel.js"></script>
     <script src="./views/modalProduto.js"></script>
+    <script src="./views/sidebarCarrinho.js"></script>
 </body>
 </html>
