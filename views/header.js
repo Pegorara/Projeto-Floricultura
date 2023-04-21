@@ -2,6 +2,7 @@ const logo = document.querySelector("#logo");
 const navbar = document.querySelector("#navbar");
 const navDown = document.querySelector("#navDown");
 
+
 const navOptions = [
     {
         type: 'a',
@@ -31,9 +32,22 @@ const navOptions = [
     {
         type: 'button',
         img: '../images/svgs/user-circle.svg',
-        onClick: ''
+        onClick: 'renderModalLogin()'
     }
 ]
+
+function renderModalLogin(){
+    document.getElementById("modalLogin").classList.toggle("w3-show");
+}
+
+function closeRegister(){
+    document.getElementById("modalCadastro").classList.toggle("w3-show");
+}
+
+function changeLogin(){
+    document.getElementById("modalLogin").classList.toggle("w3-show");
+    document.getElementById("modalCadastro").classList.toggle("w3-show");
+}
 
 function renderHeader(){
     for(let op of navOptions){

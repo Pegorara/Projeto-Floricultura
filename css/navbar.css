@@ -40,6 +40,7 @@
     background-size: 120%;
     color: #2D3648;
     background-image: url("../images/svgs/user-circle.svg");
+    cursor:pointer ;
 }
 #logo{
     width: 15rem;

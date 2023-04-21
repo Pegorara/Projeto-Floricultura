@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Taldas Flores</title>
 </head>
@@ -147,6 +148,67 @@
         </div>
     </div>
 
+
+    <!-- Modal Login -->
+    <section id="modalLogin" style="display: none;" class="w3-display-middle">
+        <div class="container">
+            <div class="login-form">
+                <button class="close" onclick="renderModalLogin()">&times;</button>
+                <div class="title">Login</div>
+                <form action="#">
+                    <div class="input-box">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+                    <div class="forgot"><a href="#">Esqueceu a senha?</a></div>
+                    <div class="input-box">
+                        <input type="submit" value="Entrar">
+                    </div>
+                </form>
+                <div class="signup-text">
+                    <button href="#" onClick="changeLogin()">Cadastre-se</button>
+                </div>
+            </div>
+            <div class="img-login">
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Cadastro -->
+    <section id="modalCadastro" style="display: none" class="w3-display-middle">
+        <div class="container">
+            <div class="login-form">
+                <button class="close" onClick="closeRegister()">&times;</button>
+                <div class="title">Cadastro</div>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Nome Completo" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Senha" id="password" required onchange="validatePassword();">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Confirme a senha" id="confirm_password" required onchange="validatePassword();">
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="Registrar">
+                    </div>
+                </form>
+                <div class="signup-text">
+                    <p>Já tem conta?<button href="#" onClick="changeLogin()">Fazer login</button></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="./views/header.js"></script>
     <script src="./views/carrossel.js"></script>

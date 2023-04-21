@@ -1,0 +1,96 @@
+
+:root{
+    --cor-padrao: #473c33;
+}
+
+.container{
+    max-width: 850px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 2.5rem;
+    border-radius: 8px;
+}
+
+.container .close{
+    position: absolute;
+    text-align: right;
+    cursor: pointer;
+    top: .8rem;
+    right: .8rem;
+    background-color: transparent;
+    border: none;
+    background-image: url("../images/svgs/.svg");
+    font-size: 1.5rem;
+}
+
+.container .login-form .title{
+    position: flex;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.container .login-form .input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+.container .login-form .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.container .login-form .input-box input:focus,
+.container .login-form .input-box input:valid{
+    border-color: var(--cor-padrao);
+}
+
+.container .login-form .input-box input[type="submit"]{
+    background-color: var(--cor-padrao);
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.container .login-form .input-box input[type="submit"]:hover{
+    background-color: #473c33e8;
+    letter-spacing: 0.5px;
+}
+
+.container .login-form .input-box i{
+    position: absolute;
+    color: var(--cor-padrao);
+    font-size: 17px;
+}
+
+.container .login-form .forgot a{
+    color: var(--cor-padrao);
+    text-decoration: nome;
+}
+
+.container .login-form .signup-text {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container .login-form .signup-text button{
+    color: var(--cor-padrao);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+    
