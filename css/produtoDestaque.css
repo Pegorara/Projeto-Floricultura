@@ -49,6 +49,7 @@
   border-radius: 5px;
   background-color: rgb(85, 207, 85);
   padding: 0.2rem 1rem;
+  cursor: pointer;
 }
 
 .produtoDestaque .addToCart:active{
