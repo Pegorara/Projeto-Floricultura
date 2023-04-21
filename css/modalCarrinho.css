@@ -1,3 +1,10 @@
+#mySidebar{
+  width: 70%;
+  max-width: 20rem;
+  right:0;
+  display: none;
+}
+
 #headerSidebar {
   display: flex;
   align-items: center;

@@ -9,66 +9,68 @@
     <title>Taldas Flores</title>
 </head>
 <body>
-    <header>
-        <div class="logoLocal w3-container">
-            <img id="logo" src="./images/hibisco.png" alt="Logo">
-            <h1>Taldas Flores</h1>
-        </div>
-        <nav id="navbar" class="w3-container">
+    <header id="header">
+        <img id="logo" src="./images/logo.png" alt="Logo">
+        <nav id="navbar" class="w3-hide-medium w3-hide-small">
         </nav>
+        <div class="w3-dropdown-click w3-right w3-hide-large">
+            <button id="menu" onclick="dropdown()" class="w3-button"></button>
+            <div id="navDown" class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+              <a href="#" class="w3-bar-item w3-button">Destaques</a>
+              <a href="#" class="w3-bar-item w3-button">Catálogo</a>
+              <a href="#" class="w3-bar-item w3-button">Sobre nós</a>
+            </div>
+          </div>
     </header>
 
-    <section id="carrosselLocal" class="w3-container" style="margin: 0 auto;">
+    <section id="carrosselLocal" style="margin: 0 auto;">
         <div class="carrossel">
             <img id="imageLocal">
             <div id="buttonsLocal"></div>
         </div>
     </section>
-
-    <div class="w3-container" style="display: flex; justify-content: center;">
-        <h2 style="width: 65vw">Destaques</h2>
-    </div>
-
+    
     <div class="w3-container" id="destaques">
-        <div class="w3-container" id="listaDestaque">
-            <div class="produtoDestaque">
-                <img class="imagemProduto" src="./images/produto.png">
+        <h2>Destaques</h2>
+        <div id="listaDestaque">
+            <div class="produtoDestaque w3-card">
+                <img class="imagemProduto" src="./images/flowers/astromelia/001.jpg">
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
-                <div>
-                    <h4>R$ 30,00</h4>
-                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                <div class="valueLocal">
+                        <h4>R$ 30,00</h4>
+                        <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
                 </div>
             </div>
-            <div class="produtoDestaque">
-                <img class="imagemProduto" src="./images/produto.png">
+            <div class="produtoDestaque w3-card">
+                <img class="imagemProduto" src="./images/flowers/hibisco/001.jpg">
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
-                <div>
-                    <h4>R$ 30,00</h4>
-                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                <div class="valueLocal">
+                        <h4>R$ 30,00</h4>
+                        <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
                 </div>
             </div>
-            <div class="produtoDestaque">
-                <img class="imagemProduto" src="./images/produto.png">
+            <div class="produtoDestaque w3-card">
+                <img class="imagemProduto" src="./images/flowers/batoes/001.jpg">
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
-                <div>
-                    <h4>R$ 30,00</h4>
-                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                <div class="valueLocal">
+                        <h4>R$ 30,00</h4>
+                        <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
                 </div>
             </div>
-            <div class="produtoDestaque">
-                <img class="imagemProduto" src="./images/produto.png">
+            <div class="produtoDestaque w3-card">
+                <img class="imagemProduto" src="./images/flowers/crisantemos/001.jpg">
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
-                <div>
-                    <h4>R$ 30,00</h4>
-                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                <div class="valueLocal">
+                        <h4>R$ 30,00</h4>
+                        <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
                 </div>
             </div>
         </div>
@@ -77,14 +79,14 @@
 
 
     <!-- Modais aqui -->
-    <button id="carrinho" onclick="w3_open()"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+    <button id="carrinho" onclick="showCarrinho()"><img src="./images/svgs/outline-shopping-cart.svg"></button>
 
     <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-right w3-card" style="width:20%;right:0;display: none;" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-right w3-card" id="mySidebar">
         <div id="headerSidebar">
             <span id="tituloSidebar">Carrinho</span>
             <span id="retangulo"></span>
-            <button onclick="w3_close()" id="fecharCarrinho">&times;</button>
+            <button onclick="showCarrinho()" id="fecharCarrinho">&times;</button>
         </div>
         <div class="produtoCarrinho w3-card">
             <img class="fotoProdutoCarrinho" src="./images/flowers/astromelia/001.jpg" alt="">
