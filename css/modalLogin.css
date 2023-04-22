@@ -1,12 +1,12 @@
-
-:root{
-    --cor-padrao: #473c33;
+#modalLogin, #modalCadastro{
+    position: fixed;
 }
 
 .container{
+    margin: 0 auto;
     max-width: 850px;
     background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 100vw rgba(0, 0, 0, 0.596);
     display: flex;
     align-items: center;
     padding: 2.5rem;
@@ -54,11 +54,11 @@
 
 .container .login-form .input-box input:focus,
 .container .login-form .input-box input:valid{
-    border-color: var(--cor-padrao);
+    border-color: var(--marrom);
 }
 
 .container .login-form .input-box input[type="submit"]{
-    background-color: var(--cor-padrao);
+    background-color: var(--marrom);
     border: 0;
     color: #fff;
     border-radius: 5px;
@@ -67,18 +67,18 @@
 }
 
 .container .login-form .input-box input[type="submit"]:hover{
-    background-color: #473c33e8;
+    background-color: var(--marrom);
     letter-spacing: 0.5px;
 }
 
 .container .login-form .input-box i{
     position: absolute;
-    color: var(--cor-padrao);
+    color: var(--marrom);
     font-size: 17px;
 }
 
 .container .login-form .forgot a{
-    color: var(--cor-padrao);
+    color: var(--marrom);
     text-decoration: nome;
 }
 
@@ -88,9 +88,15 @@
 }
 
 .container .login-form .signup-text button{
-    color: var(--cor-padrao);
+    color: var(--marrom);
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
     
+
+@media (max-width: 512px){
+    #modalLogin, #modalCadastro{
+        width: 80vw;
+    }
+}
