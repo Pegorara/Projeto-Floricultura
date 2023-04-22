@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,21 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Taldas Flores</title>
 </head>
+
 <body>
     <header id="header">
         <img id="logo" src="./images/logo.png" alt="Logo">
         <nav id="navbar" class="w3-hide-medium w3-hide-small">
         </nav>
-        <div class="w3-dropdown-click w3-right w3-hide-large">
+        <div id="menuMobile" class="w3-dropdown-click w3-right w3-hide-large">
             <button id="menu" onclick="dropdown()" class="w3-button"></button>
             <div id="navDown" class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
-              <a href="#" class="w3-bar-item w3-button">Destaques</a>
-              <a href="#" class="w3-bar-item w3-button">Catálogo</a>
-              <a href="#" class="w3-bar-item w3-button">Sobre nós</a>
+                <a href="#" class="w3-bar-item w3-button">Destaques</a>
+                <a href="#" class="w3-bar-item w3-button">Catálogo</a>
+                <a href="#" class="w3-bar-item w3-button">Sobre nós</a>
             </div>
-          </div>
+            <button onClick="renderModalLogin()" id="loginMobile"></button>
+        </div>
     </header>
 
     <section id="carrosselLocal" style="margin: 0 auto;">
@@ -30,9 +33,9 @@
             <div id="buttonsLocal"></div>
         </div>
     </section>
-    
-    <div class="w3-container" id="destaques">
-        <h2>Destaques</h2>
+
+    <section id="destaques">
+        <h2>Mais Vendidos</h2>
         <div id="listaDestaque">
             <div class="produtoDestaque w3-card">
                 <img class="imagemProduto" src="./images/flowers/astromelia/001.jpg">
@@ -40,8 +43,8 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
                 <div class="valueLocal">
-                        <h4>R$ 30,00</h4>
-                        <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                    <h4>R$ 30,00</h4>
+                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
                 </div>
             </div>
             <div class="produtoDestaque w3-card">
@@ -50,18 +53,18 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
                 <div class="valueLocal">
-                        <h4>R$ 30,00</h4>
-                        <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                    <h4>R$ 30,00</h4>
+                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
                 </div>
             </div>
             <div class="produtoDestaque w3-card">
-                <img class="imagemProduto" src="./images/flowers/batoes/001.jpg">
+                <img class="imagemProduto" src="./images/flowers/bastoes/001.jpg">
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
                 <div class="valueLocal">
-                        <h4>R$ 30,00</h4>
-                        <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                    <h4>R$ 30,00</h4>
+                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
                 </div>
             </div>
             <div class="produtoDestaque w3-card">
@@ -70,149 +73,177 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
                 <div class="valueLocal">
-                        <h4>R$ 30,00</h4>
-                        <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+                    <h4>R$ 30,00</h4>
+                    <button class="addToCart"><img src="./images/svgs/outline-shopping-cart.svg"></button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    <section class="w3-container" id="catalogo">
+        <h2>Catálogo</h2>
+        <div class="carrosselCatalogo">
+            <button class="passar" onClick="backPage()">&lt;</button>
+            <div id="listaCatalogo">
 
-
-    <!-- Modais aqui -->
-    <button id="carrinho" onclick="showCarrinho()"><img src="./images/svgs/outline-shopping-cart.svg"></button>
-
-    <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-right w3-card" id="mySidebar">
-        <div id="headerSidebar">
-            <span id="tituloSidebar">Carrinho</span>
-            <span id="retangulo"></span>
-            <button onclick="showCarrinho()" id="fecharCarrinho">&times;</button>
-        </div>
-        <div class="produtoCarrinho w3-card">
-            <img class="fotoProdutoCarrinho" src="./images/flowers/astromelia/001.jpg" alt="">
-            <div class="infosProdutoCarrinho">
-                <b>Astromélia</b>
-                <span>R$ 30,00</span>
             </div>
-
-            <div class="controles">
-                <span>-</span>
-                <span>1</span>
-                <span>+</span>
-            </div>
-
-            <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
+            <button class="passar" onClick="nextPage()">&gt;</button>
         </div>
-        <div class="produtoCarrinho w3-card">
-            <img class="fotoProdutoCarrinho" src="./images/flowers/batoes/001.jpg" alt="">
-            <div class="infosProdutoCarrinho">
-                <b>Batões</b>
-                <span>R$ 30,00</span>
-            </div>
 
-            <div class="controles">
-                <span>-</span>
-                <span>1</span>
-                <span>+</span>
-            </div>
+    </section>
 
-            <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
-        </div>
-      </div>
-
-    <div id="modalProduto" class="w3-modal">
-        <div class="w3-modal-content">
-          <div class="" id="headerModalProduto">
-            <p id="nomeProduto">Nome do Produto</p>
-            <button class="w3-button" id="fecharModalProduto">&times;</button>
-          </div>
-          <div class="w3-container" id="fotoProduto">
-            <img src="./images/WF Image Placeholder.png" alt="Imagem do produto" id="imagemProduto">
-          </div>
-          <div class="w3-container">
-              <p style="margin: 0;">DESCRIÇÃO</p>
-          </div>
-          <div class="w3-container">
-            <p id="descricaoProduto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe hic explicabo accusantium nesciunt beatae ad odio fuga modi facere voluptatem autem dolorem deserunt quasi in, recusandae pariatur, dolores dignissimos aperiam!
-            </p>
-          </div>
-          <footer id="footerModalProduto">
-            <p id="precoModalProduto">R$ 00,00</p>
-            <button id="buttonFooterProduto">
-                <img src="/images/svgs/outline-shopping-cart.svg" alt="">
-                Adicionar ao carrinho
-            </button>
-          </footer>
-        </div>
-    </div>
+    <section style="width: 70vw; margin: 0 auto;" id="sobreNos">
+        <h2>Sobre Nós</h2>
+        <p> Somos uma empresa brasileira que se dedica à exportação
+            de flores tropicais de alta qualidade para clientes
+            em todo o mundo. Com anos de experiência e uma equipe
+            altamente qualificada, garantimos que nossos
+            clientes recebam as melhores flores tropicais do Brasil.</p>
+    </section>
 
 
-    <!-- Modal Login -->
-    <section id="modalLogin" style="display: none;" class="w3-display-middle">
-        <div class="container">
-            <div class="login-form">
-                <button class="close" onclick="renderModalLogin()">&times;</button>
-                <div class="title">Login</div>
-                <form action="#">
-                    <div class="input-box">
-                        <i class="fa fa-envelope"></i>
-                        <input type="email" placeholder="Email" required>
-                    </div>
     
-                    <div class="input-box">
-                        <i class="fa fa-lock"></i>
-                        <input type="password" placeholder="Senha" required>
-                    </div>
-                    <div class="forgot"><a href="#">Esqueceu a senha?</a></div>
-                    <div class="input-box">
-                        <input type="submit" value="Entrar">
-                    </div>
-                </form>
-                <div class="signup-text">
-                    <button href="#" onClick="changeLogin()">Cadastre-se</button>
-                </div>
+
+        <!-- Modais aqui -->
+        <button id="carrinho" onclick="showCarrinho()"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-right w3-card" id="mySidebar">
+            <div id="headerSidebar">
+                <span id="tituloSidebar">Carrinho</span>
+                <span id="retangulo"></span>
+                <button onclick="showCarrinho()" id="fecharCarrinho">&times;</button>
             </div>
-            <div class="img-login">
-                <img src="" alt="">
+            <div class="produtoCarrinho w3-card">
+                <img class="fotoProdutoCarrinho" src="./images/flowers/astromelia/001.jpg" alt="">
+                <div class="infosProdutoCarrinho">
+                    <b>Astromélia</b>
+                    <span>R$ 30,00</span>
+                </div>
+
+                <div class="controles">
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                </div>
+
+                <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
+            </div>
+            <div class="produtoCarrinho w3-card">
+                <img class="fotoProdutoCarrinho" src="./images/flowers/bastoes/001.jpg" alt="">
+                <div class="infosProdutoCarrinho">
+                    <b>Batões</b>
+                    <span>R$ 30,00</span>
+                </div>
+
+                <div class="controles">
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                </div>
+
+                <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
             </div>
         </div>
-    </section>
 
-    <!-- Modal Cadastro -->
-    <section id="modalCadastro" style="display: none" class="w3-display-middle">
-        <div class="container">
-            <div class="login-form">
-                <button class="close" onClick="closeRegister()">&times;</button>
-                <div class="title">Cadastro</div>
-                <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="Nome Completo" required>
-                    </div>
-                    <div class="input-box">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="input-box">
-                        <input type="password" placeholder="Senha" id="password" required onchange="validatePassword();">
-                    </div>
-                    <div class="input-box">
-                        <input type="password" placeholder="Confirme a senha" id="confirm_password" required onchange="validatePassword();">
-                    </div>
-                    <div class="input-box">
-                        <input type="submit" value="Registrar">
-                    </div>
-                </form>
-                <div class="signup-text">
-                    <p>Já tem conta?<button href="#" onClick="changeLogin()">Fazer login</button></p>
+        <div id="modalProduto" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="" id="headerModalProduto">
+                    <p id="nomeProduto">Nome do Produto</p>
+                    <button class="w3-button" id="fecharModalProduto">&times;</button>
                 </div>
+                <div class="w3-container" id="fotoProduto">
+                    <img src="./images/WF Image Placeholder.png" alt="Imagem do produto" id="imagemProduto">
+                </div>
+                <div class="w3-container">
+                    <p style="margin: 0;">DESCRIÇÃO</p>
+                </div>
+                <div class="w3-container">
+                    <p id="descricaoProduto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe hic explicabo accusantium
+                        nesciunt beatae ad odio fuga modi facere voluptatem autem dolorem deserunt quasi in, recusandae
+                        pariatur, dolores dignissimos aperiam!
+                    </p>
+                </div>
+                <footer id="footerModalProduto">
+                    <p id="precoModalProduto">R$ 00,00</p>
+                    <button id="buttonFooterProduto">
+                        <img src="/images/svgs/outline-shopping-cart.svg" alt="">
+                        Adicionar ao carrinho
+                    </button>
+                </footer>
             </div>
         </div>
-    </section>
 
-    <script src="./views/header.js"></script>
-    <script src="./views/carrossel.js"></script>
-    <script src="./views/modalProduto.js"></script>
-    <script src="./views/sidebarCarrinho.js"></script>
+
+        <!-- Modal Login -->
+        <section id="modalLogin" style="display: none;" class="w3-display-middle">
+            <div class="container">
+                <div class="login-form">
+                    <button class="close" onclick="renderModalLogin()">&times;</button>
+                    <div class="title">Login</div>
+                    <form action="#">
+                        <div class="input-box">
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" placeholder="Senha" required>
+                        </div>
+                        <div class="forgot"><a href="#">Esqueceu a senha?</a></div>
+                        <div class="input-box">
+                            <input type="submit" value="Entrar">
+                        </div>
+                    </form>
+                    <div class="signup-text">
+                        <button href="#" onClick="changeLogin()">Cadastre-se</button>
+                    </div>
+                </div>
+                <div class="img-login">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Cadastro -->
+        <section id="modalCadastro" style="display: none" class="w3-display-middle">
+            <div class="container">
+                <div class="login-form">
+                    <button class="close" onClick="closeRegister()">&times;</button>
+                    <div class="title">Cadastro</div>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Nome Completo" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="Senha" id="password" required
+                                onchange="validatePassword();">
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="Confirme a senha" id="confirm_password" required
+                                onchange="validatePassword();">
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" value="Registrar">
+                        </div>
+                    </form>
+                    <div class="signup-text">
+                        <p>Já tem conta?<button href="#" onClick="changeLogin()">Fazer login</button></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./views/header.js"></script>
+        <script src="./views/carrossel.js"></script>
+        <script src="./views/catalogo.js"></script>
+        <script src="./views/modalProduto.js"></script>
+        <script src="./views/sidebarCarrinho.js"></script>
 </body>
+
 </html>
