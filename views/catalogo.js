@@ -6,93 +6,93 @@ let pages = 1;
 const flores = [
     {
         num: 1,
-        title: "alamanda",
+        title: "Alamanda",
         price: 10.00,
         url: "../images/flowers/alamanda/001.jpg"
     },
     {
         num: 2,
-        title: "amarilis",
+        title: "Amarilis",
         price: 20.00,
         url: "../images/flowers/amarilis/001.jpg"
 
     },
     {
         num: 3,
-        title: "anturio",
+        title: "Anturio",
         price: 20.00,
         url: "../images/flowers/anturio/001.jpg"
 
     },
     {
         num: 4,
-        title: "astromelia",
+        title: "Astromelia",
         price: 20.00,
         url: "../images/flowers/astromelia/001.jpg"
     },
     {
         num: 5,
-        title: "bastões do imperador",
+        title: "Bastões do imperador",
         price:20.00,
         url: "../images/flowers/bastoes/001.jpg"
     },
     {
         num: 6,
-        title: "buganvilia",
+        title: "Buganvilia",
         price:20.00,
         url: "../images/flowers/buganvilia/001.jpg"
     },
     {
         num: 7,
-        title: "clivia",
+        title: "Clivia",
         price:20.00,
         url: "../images/flowers/clivia/001.jpg"
     },
     {
         num: 8,
-        title: "crisantemos",
+        title: "Crisantemos",
         price:20.00,
         url: "../images/flowers/crisantemos/001.jpg"
     },
     {
         num: 9,
-        title: "flor-de-maio",
+        title: "Flor-de-maio",
         price:20.00,
         url: "../images/flowers/flor-de-maio/001.jpg"
     },
     {
         num: 10,
-        title: "heliconas",
+        title: "Heliconas",
         price:20.00,
         url: "../images/flowers/heliconias/001.jpg"
     },
     {
         num: 11,
-        title: "hibisco",
+        title: "Hibisco",
         price:20.00,
         url: "../images/flowers/hibisco/001.jpg"
     },
     {
         num: 12,
-        title: "ipe",
+        title: "Ipe",
         price:20.00,
         url: "../images/flowers/ipe/001.jpg"
     },
     {
         num: 13,
-        title: "jacaranda",
+        title: "Jacaranda",
         price:20.00,
         url: "../images/flowers/jacaranda/001.jpg"
     },
     {
         num: 14,
-        title: "onze-horas",
+        title: "Onze-horas",
         price: 50.00,
-        url: "../images/flowers/onze-horasa/001.jpg"
+        url: "../images/flowers/onze-horas/001.jpg"
     },
     {
         num: 15,
-        title: "salmão",
+        title: "Salmão",
         price: 25.00,
         url: "../images/flowers/salmao/001.jpg"
     },
@@ -126,10 +126,9 @@ function renderCard(flor){
     const div = document.createElement("div");
     div.classList.add("valueLocal");
     const h4 = document.createElement("h4");
-    h4.innerText = flor.price;
+    h4.innerText = `R$${flor.price}`;
     const button = document.createElement("button");
     button.classList.add("addToCart");
-    button.appendChild(document.createElement("img"));
     div.appendChild(h4);
     div.appendChild(button);
     produto.appendChild(img);
@@ -139,10 +138,10 @@ function renderCard(flor){
 }
 
 function renderCatalogo(){
-    let newPage = createPage(pages)
+    let newPage = createPage(pages);
     for(let flor of flores){
         if(flor.title !== ""){
-            newPage.appendChild(renderCard(flor));
+            newPage.children[0].appendChild(renderCard(flor));
             if(flor.num%6 === 0){
                 catalogo.appendChild(newPage);
                 pages++;
@@ -158,19 +157,23 @@ function renderCatalogo(){
 
 function createPage(n){
     const page = document.createElement("div");
+    const pageContent = document.createElement("div");
+    pageContent.classList.add("pageContent");
     page.classList.add("page");
     page.setAttribute("value", n);
+    page.setAttribute("hidden", "true");
+    page.appendChild(pageContent);
     return page;
 }
 function nextPage(){
-    if(currentPage<pages)currentPage++;
-    if(currentPage==pages)currentPage = 1;
+    currentPage++;
+    if(currentPage>pages)currentPage = 1;
     showPage();
 
 }
 function backPage(){
-    if(currentPage=pages)currentPage = 1;
-    if(currentPage<pages)currentPage--;
+    currentPage--;
+    if(currentPage<1)currentPage = pages;
     showPage();
 }
 
@@ -178,9 +181,10 @@ function showPage(){
     allPages = document.querySelectorAll(".page");
     for(let p of allPages){
         const v = p.getAttribute("value");
-        if(v === currentPage){
-            p.classList.toogle("w3-show");
-            p.style.color = "red";
+        if(v == currentPage){
+            p.classList.add("w3-show");
+        }else{
+            p.classList.remove("w3-show");
         }
     }
 }
