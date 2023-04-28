@@ -7,7 +7,6 @@
 }
 
 #destaques h2{
-  background-color:var(--verde);
   font-family: Inter;
   padding: 0 0.5rem;
 }
@@ -58,14 +57,14 @@
   max-width: 15rem;
   width: 100%;
   border-radius: 5px;
-}
-
-.produtoDestaque h4{
-  max-width: fit-content;
+  cursor: pointer;
 }
 
 .produtoDestaque p{
-  text-align: center;
+  width: 100%;
+  text-align: start;
+  padding-left: 10px;
+  text-transform: uppercase;
 }
 
 .produtoDestaque .addToCart {
