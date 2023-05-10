@@ -6,23 +6,18 @@ const navDown = document.querySelector("#navDown");
 const navOptions = [
     {
         type: 'a',
-        name: "Home",
-        url: "#carrosselLocal"
-    },
-    {
-        type: 'a',
         name: "Destaques",
-        url: "#destaquesLocal"
+        url: "#destaques"
     },
     {
         type: 'a',
         name: "Catálogo",
-        url: "#catalogoLocal"
+        url: "#catalogo"
     },
     {
         type: 'a',
         name: "Sobre nós",
-        url: "#sobrenosLocal"
+        url: "#sobreNos"
     },
     {
         type: 'a',

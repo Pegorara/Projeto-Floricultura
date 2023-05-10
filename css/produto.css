@@ -1,0 +1,50 @@
+.produto{
+    width: 12rem;
+    max-width: 12rem;
+    display: flex;
+    flex-direction: column;
+    height: 18rem;
+    justify-self: center;
+}
+
+.imgFlor{
+    width: 100%;
+    height: 12rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.valueLocal{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.valueLocal h4, .valueLocal button{
+    margin: 0 auto;
+}
+
+.produto p{
+    margin: 0 auto;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.addToCart {
+    background-image: url("../images/svgs/outline-shopping-cart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 2rem;
+    width: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(85, 207, 85);
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+
+.addToCart:active{
+    background-color: rgb(0, 143, 31);
+  }
