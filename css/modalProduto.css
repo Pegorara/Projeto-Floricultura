@@ -1,5 +1,5 @@
 .w3-modal-content {
-  width: 35%;
+  width: 50rem;
   background: #D9D9D9;
   border-radius: 4px;
   padding: 10px 0;
@@ -21,16 +21,41 @@
   color: white;
 }
 
+#imgModalProduto{
+  display: flex;
+  margin: 0 auto;
+  width: 20rem;
+  position: relative;
+  height: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+}
+
+#imgModalProduto button{
+  position: absolute;
+  width: 2.5rem;
+  background-color: #d9d9d946;
+}
+
+#imgModalProduto button:nth-child(1){
+  right: 0;
+}
+
+#imgModalProduto button:nth-child(2){
+  left: 0;
+}
+
+.imgModalProduto  button:nth-child(1)::after{
+  content: ">";
+}
+.imgModalProduto  button:nth-child(2)::after{
+  content: "<";
+}
+
 #fecharModalProduto {
   font-size: x-large;
-}
-
-#fotoProduto {
-  padding: 10px 20px;
-}
-
-#imagemProduto {
-  max-width: 100%;
 }
 
 #descricaoProduto {

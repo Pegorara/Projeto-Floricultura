@@ -1,4 +1,4 @@
-#destaques, #catalogo{
+#destaques{
   margin: 0 auto 2rem;
   display: flex;
   flex-direction: column;
@@ -8,20 +8,11 @@
 
 #destaques h2{
   font-family: Inter;
-  padding: 0 0.5rem;
 }
 
-#listaDestaque, #listaCatalogo {
-  width: 100%;
-  box-sizing: border-box;
+#listaDestaque{
+  display: flex;
   justify-content: space-between;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-areas: 3fr 3fr 3fr 3fr;
-  grid-auto-flow: column;
-  overflow:scroll;
-  overflow-y: hidden;
-  padding: 1rem 0;
 }
 
 #listaDestaque::-webkit-scrollbar{
@@ -35,63 +26,4 @@
 #listaDestaque::-webkit-scrollbar-thumb{
   background-color:var(--marrom);
   border-radius: 20px;
-}
-
-
-.produtoDestaque, .produtoCatalogo{
-  max-width: 15rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 0.3rem;
-}
-.valueLocal{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-}
-
-.produtoDestaque img{
-  max-width: 15rem;
-  width: 100%;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.produtoDestaque p{
-  width: 100%;
-  text-align: start;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
-
-.produtoDestaque .addToCart {
-  height: fit-content;
-  border: none;
-  border-radius: 5px;
-  background-color: rgb(85, 207, 85);
-  padding: 0.2rem 1rem;
-  cursor: pointer;
-}
-
-.produtoDestaque .addToCart:active{
-  background-color: rgb(0, 143, 31);
-}
-
-@media (max-width: 992px) {
-  #destaques{
-    width: 100vw;
-  }
-
-  .produtoDestaque{
-    min-width: 10.2rem;
-    width: 45%;
-  }
-
-  .produtoDestaque h4, .produtoDestaque p{
-    font-size: calc(1rem);
-  }
-
 }

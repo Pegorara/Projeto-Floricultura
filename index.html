@@ -26,7 +26,6 @@
             </div>
         </div>
     </header>
-
     <section id="carrosselLocal" style="margin: 0 auto;">
         <div class="carrossel">
             <img id="imageLocal">
@@ -36,7 +35,8 @@
 
     <section id="destaques">
         <h2>Mais Vendidos</h2>
-        <div id="listaDestaque"></div>
+        <div id="listaDestaque">
+        </div>
     </section>
 
     <section class="w3-container" id="catalogo">
@@ -106,28 +106,24 @@
         </div>
 
 
-        <!-- modal produto -->
         <div id="modalProduto" class="w3-modal">
             <div class="w3-modal-content">
-                <div id="headerModalProduto">
-                    <p id="nomeProduto">Nome do Produto</p>
+                <div class="" id="headerModalProduto">
+                    <p id="nomeProduto"></p>
+
                     <button class="w3-button" id="fecharModalProduto">&times;</button>
                 </div>
-                <div class="w3-container" id="fotoProduto">
-                    <img src="./images/WF Image Placeholder.png" alt="Imagem do produto" id="imagemProduto">
+                <div id="imgModalProduto">
+                    <button id="btnNext" class="w3-button">&gt;</button>
+                    <button id="btnPrevious" class="w3-button">&lt;</button>
                 </div>
                 <div class="w3-container">
-                    <p style="margin: 0;">DESCRIÇÃO</p>
-                </div>
-                <div class="w3-container">
+                    <h4>Descrição</h4>
                     <p id="descricaoProduto">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe hic explicabo accusantium
-                        nesciunt beatae ad odio fuga modi facere voluptatem autem dolorem deserunt quasi in, recusandae
-                        pariatur, dolores dignissimos aperiam!
-                    </p>
+                   </p>
                 </div>
                 <footer id="footerModalProduto">
-                    <p id="precoModalProduto">R$ 00,00</p>
+                    <p id="precoModalProduto"></p>
                     <button id="buttonFooterProduto">
                         <img src="/images/svgs/outline-shopping-cart.svg" alt="">
                         Adicionar ao carrinho
@@ -200,11 +196,20 @@
             </div>
         </section>
 
+
+
+
+
+        <!-- SCRIPTS -->
+        <script src="./views/modalProduto.js"></script>
+        <script src="flores.js"></script>
+
+        <script src="/controller/carrinho.js"></script>
+
+        <script src="./views/destaques.js"></script>
         <script src="./views/header.js"></script>
         <script src="./views/carrossel.js"></script>
         <script src="./views/catalogo.js"></script>
-        <script src="./views/destaques.js"></script>
-        <script src="./views/modalProduto.js"></script>
         <script src="./views/sidebarCarrinho.js"></script>
 </body>
 
