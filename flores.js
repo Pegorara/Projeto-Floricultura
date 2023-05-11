@@ -14,7 +14,7 @@ const flores = [
     },
     {
         num: 2,
-        title: "Amarilis",
+        title: "Amarílis",
         price: 20.00,
         url: "../images/flowers/amarilis/001.jpg",
         imgs:[
@@ -23,12 +23,12 @@ const flores = [
             "../images/flowers/amarilis/003.jpg",
             "../images/flowers/amarilis/004.jpg",
 
-        ] 
-
+        ], 
+        desc: "Uma flor exótica e elegante, com uma haste longa e folhas largas. Suas pétalas são grandes e brilhantes, geralmente em tons de vermelho, rosa, branco ou bicolor. Ela é conhecida por simbolizar a beleza e o orgulho."
     },
     {
         num: 3,
-        title: "Anturio",
+        title: "Antúrio",
         price: 20.00,
         url: "../images/flowers/anturio/001.jpg",
         imgs:[
@@ -36,12 +36,12 @@ const flores = [
             "../images/flowers/anturio/002.jpg",
             "../images/flowers/anturio/003.jpg",
             "../images/flowers/anturio/004.jpg",
-        ]
-
+        ],
+        desc: "Uma flor tropical e exótica, com uma inflorescência em forma de espiga e folhas brilhantes. Ela é encontrada em cores vibrantes como vermelho, rosa, branco e amarelo. É frequentemente usada como planta ornamental em interiores e simboliza hospitalidade e amizade."
     },
     {
         num: 4,
-        title: "Astromelia",
+        title: "Astromélia",
         price: 20.00,
         url: "../images/flowers/astromelia/001.jpg",
         imgs:[
@@ -49,12 +49,12 @@ const flores = [
             "../images/flowers/astromelia/002.jpg",
             "../images/flowers/astromelia/003.jpg",
             "../images/flowers/astromelia/004.jpg",
-        ] 
-
+        ], 
+        desc: "Uma flor elegante e refinada, com pétalas em forma de coração e folhas verde-escuras. Ela é encontrada em várias cores, como rosa, vermelho, laranja, amarelo e branco. Simboliza a amizade duradoura e a lealdade."
     },
     {
         num: 5,
-        title: "Bastões do imperador",
+        title: "Bastão do Imperador",
         price:20.00,
         url: "../images/flowers/bastoes/001.jpg",
         imgs:[
@@ -62,11 +62,12 @@ const flores = [
             "../images/flowers/bastoes/002.jpg",
             "../images/flowers/bastoes/003.jpg",
             "../images/flowers/bastoes/004.jpg",
-        ]
+        ],
+        desc: "Uma flor exótica e imponente, com uma haste longa e folhas grandes. Suas flores são tubulares e de cores vibrantes, como vermelho, laranja e amarelo. Ela simboliza a nobreza e a majestade."
     },
     {
         num: 6,
-        title: "Buganvilia",
+        title: "Bougainvillea",
         price:20.00,
         url: "../images/flowers/buganvilia/001.jpg",
         imgs:[
@@ -74,7 +75,8 @@ const flores = [
             "../images/flowers/buganvilia/002.jpg",
             "../images/flowers/buganvilia/003.jpg",
             "../images/flowers/buganvilia/004.jpg",
-        ]
+        ],
+        desc: "Uma trepadeira com flores vibrantes e coloridas, geralmente em tons de rosa, vermelho, laranja e roxo. Ela é frequentemente usada como planta ornamental em jardins e varandas, simbolizando a beleza e a abundância."
     },
     {
         num: 7,
@@ -86,12 +88,12 @@ const flores = [
             "../images/flowers/clivia/002.jpg",
             "../images/flowers/clivia/003.jpg",
             "../images/flowers/clivia/004.jpg",
-        ]
-
+        ],
+        desc: "Uma planta com flores de aparência exótica, com pétalas largas e verde-escuras. Suas flores são geralmente de cor laranja, mas também podem ser amarelas ou vermelhas. Ela simboliza o amor e a paixão."
     },
     {
         num: 8,
-        title: "Crisantemos",
+        title: "Crisântemo",
         price:20.00,
         url: "../images/flowers/crisantemos/001.jpg",
         imgs:[
@@ -99,7 +101,8 @@ const flores = [
             "../images/flowers/crisantemos/002.jpg",
             "../images/flowers/crisantemos/003.jpg",
             "../images/flowers/crisantemos/004.jpg",
-        ]
+        ],
+        desc: "Uma flor popular e versátil, com pétalas em forma de leque e folhas verde-escuras. Ela é encontrada em uma variedade de cores, como branco, amarelo, rosa, roxo e vermelho. É frequentemente usada em arranjos florais e simboliza a felicidade e a longevidade."
     },
     {
         num: 9,
@@ -111,11 +114,12 @@ const flores = [
             "../images/flowers/flor-de-maio/002.jpg",
             "../images/flowers/flor-de-maio/003.jpg",
             "../images/flowers/flor-de-maio/004.jpg",
-        ]
+        ],
+        desc: "Uma planta com flores pequenas e delicadas, geralmente em tons de rosa e branco. Ela é frequentemente usada como planta ornamental em interiores e simboliza a pureza e a inocência."
     },
     {
         num: 10,
-        title: "Heliconas",
+        title: "Helicônia",
         price:20.00,
         url: "../images/flowers/heliconias/001.jpg",
         imgs:[
@@ -123,7 +127,8 @@ const flores = [
             "../images/flowers/heliconias/002jpg",
             "../images/flowers/heliconias/003.jpg",
             "../images/flowers/heliconias/004.jpg",
-        ]
+        ],
+        desc: "Uma planta com flores exóticas e vibrantes, em forma de cacho. Suas pétalas são geralmente vermelhas, laranjas ou amarelas, e suas folhas são longas e verdes. Ela simboliza a audácia e a aventura."
     },
     {
         num: 11,
@@ -136,11 +141,12 @@ const flores = [
             "../images/flowers/hibisco/003.jpg",
             "../images/flowers/hibisco/004.jpg",
 
-        ]
+        ],
+        desc: "Uma flor tropical e exuberante, com pétalas em forma de sino e folhas verde-escuras. Ela é encontrada em uma variedade de cores, incluindo rosa, vermelho, laranja e amarelo. É frequentemente usada como planta ornamental em jardins e simboliza a beleza e a feminilidade."
     },
     {
         num: 12,
-        title: "Ipe",
+        title: "Ipê",
         price:20.00,
         url: "../images/flowers/ipe/001.jpg",
         imgs:[
@@ -148,11 +154,12 @@ const flores = [
             "../images/flowers/ipe/002.jpg",
             "../images/flowers/ipe/003.jpg",
             "../images/flowers/ipe/004.jpg",
-        ]
+        ],
+        desc: "Uma árvore com flores exuberantes, em forma de trompete, geralmente em tons de rosa, amarelo ou branco. Ela é uma das árvores mais emblemáticas do Brasil e simboliza a força, a vitalidade e a beleza da natureza."
     },
     {
         num: 13,
-        title: "Jacaranda",
+        title: "Jacarandá",
         price:20.00,
         url: "../images/flowers/jacaranda/001.jpg",
         imgs:[
@@ -160,7 +167,8 @@ const flores = [
             "../images/flowers/jacaranda/002.jpg",
             "../images/flowers/jacaranda/003.jpg",
             "../images/flowers/jacaranda/004.jpg",
-        ]
+        ],
+        desc: "Uma árvore com flores em forma de sino, em tons de roxo e azul. Ela é uma das árvores mais belas e icônicas do Brasil, e suas flores simbolizam a delicadeza, a elegância e a tranquilidade."
     },
     {
         num: 14,
@@ -172,7 +180,8 @@ const flores = [
             "../images/flowers/onze-horas/002.jpg",
             "../images/flowers/onze-horas/003.jpg",
             "../images/flowers/onze-horas/004.jpg",
-        ]
+        ],
+        desc: "Uma planta com flores pequenas e delicadas, geralmente em tons de rosa, vermelho, amarelo ou branco. Ela é frequentemente usada como planta ornamental em jardins e varandas, simbolizando a alegria e a espontaneidade."
     },
     {
         num: 15,
@@ -184,7 +193,8 @@ const flores = [
             "../images/flowers/salmao/002.jpg",
             "../images/flowers/salmao/003.jpg",
             "../images/flowers/salmao/004.jpg",
-        ]
+        ],
+        desc: "Uma flor com pétalas em forma de leque, em tons de rosa claro e salmão. Ela é uma das flores mais delicadas e românticas, e simboliza a feminilidade, a graça e a beleza suave."
     },
     {
         num: 16,
