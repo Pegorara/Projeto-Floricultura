@@ -39,9 +39,18 @@ function closeRegister(){
     document.getElementById("modalCadastro").classList.toggle("w3-show");
 }
 
+function closeLoginAdm(){
+    document.getElementById("modalLoginAdm").classList.toggle("w3-show");
+}
+
 function changeLogin(){
     document.getElementById("modalLogin").classList.toggle("w3-show");
     document.getElementById("modalCadastro").classList.toggle("w3-show");
+}
+
+function changeLoginAdm(){
+    document.getElementById("modalLogin").classList.toggle("w3-show");
+    document.getElementById("modalLoginAdm").classList.toggle("w3-show");
 }
 
 function renderHeader(){
