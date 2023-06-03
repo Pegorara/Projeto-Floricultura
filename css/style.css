@@ -63,21 +63,6 @@ h2, h3{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.233);
 }
 
-#btnTop{
-  position: fixed;
-  bottom: 4rem;
-  right: 4rem;
-  width: 4rem;
-  height: 4rem;
-  background-color: rgba(253,167,105,.7);
-  border-radius: 50%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
 #header,#carrosselLocal, #destaques, #catalogo{
   width: 70vw;
 }

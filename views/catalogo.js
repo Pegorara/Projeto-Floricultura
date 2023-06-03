@@ -9,7 +9,7 @@ function renderCatalogo(){
     for(let flor of flores){
         if(flor.title !== ""){
             newPage.children[0].appendChild(renderCard(flor));
-            if(flor.num%6 === 0){
+            if(flor.num%8 === 0){
                 catalogo.appendChild(newPage);
                 pages++;
                 newPage = createPage(pages);

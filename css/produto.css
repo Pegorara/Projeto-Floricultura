@@ -1,36 +1,37 @@
 .produto{
-    width: 12rem;
+    width: 12.5rem;
     max-width: 12rem;
     display: flex;
     flex-direction: column;
-    height: 18rem;
+    height: 16rem;
     justify-self: center;
+    padding: 0.5rem;
+    align-items: center;
 }
 
 .imgFlor{
-    width: 100%;
-    height: 12rem;
-    background-size: contain;
+    width: 11rem;
+    height: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
 
 .valueLocal{
+    width: 100%;
     display: grid;
     grid-template-columns: 8fr 4fr;
     align-items: center;
     justify-content: space-between;
 }
 
-.valueLocal h4, .valueLocal button{
-    margin: 0 auto;
-}
 
 .produto p{
-    margin: 0 auto;
+    margin: 0.5rem 0 auto;
     width: 100%;
     word-wrap: break-word;
+    text-align: center;
 }
 
 .addToCart {
