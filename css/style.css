@@ -16,15 +16,12 @@
   src: url("./TaldasFont.ttf");
 }
 
-
 :root{
   --marrom: #473c33;
   --verde: #ABC270;
   --laranja: #FDA769;
   --amarelo: #FEC868;
 }
-
-
 
 body{
   display: flex;
@@ -33,6 +30,7 @@ body{
 
 * {
   font-family: Inter;
+  scroll-behavior: smooth;
 }
 
 h2, h3{
@@ -65,8 +63,7 @@ h2, h3{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.233);
 }
 
-
-#header,#carrosselLocal, #destaques,#catalogo{
+#header,#carrosselLocal, #destaques, #catalogo{
   width: 70vw;
 }
 

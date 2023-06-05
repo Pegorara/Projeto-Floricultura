@@ -185,31 +185,38 @@ const flores = [
     },
     {
         num: 15,
-        title: "Salmão",
+        title: "Ixora",
         price: 25.00,
-        url: "../images/flowers/salmao/001.jpg",
+        url: "../images/flowers/ixora/001.jpg",
         imgs:[
-            "../images/flowers/salmao/001.jpg",
-            "../images/flowers/salmao/002.jpg",
-            "../images/flowers/salmao/003.jpg",
-            "../images/flowers/salmao/004.jpg",
+            "../images/flowers/ixora/001.jpg",
+            "../images/flowers/ixora/002.jpg",
+            "../images/flowers/ixora/003.jpg",
+            "../images/flowers/ixora/004.jpg",
         ],
         desc: "Uma flor com pétalas em forma de leque, em tons de rosa claro e salmão. Ela é uma das flores mais delicadas e românticas, e simboliza a feminilidade, a graça e a beleza suave."
     },
     {
         num: 16,
-        title: "",
-        url: ""
+        title: "Flamboyant",
+        price: 25.00,
+        url: "../images/flowers/flamboyant/001.jpg",
+        imgs:[
+            "../images/flowers/flamboyant/001.jpg",
+            "../images/flowers/flamboyant/002.jpg",
+            "../images/flowers/flamboyant/003.jpg",
+            "../images/flowers/flamboyant/004.jpg",
+        ],
+        desc: "As pétalas das flores do Flamboyant são grandes e têm uma forma distinta, lembrando uma borboleta ou uma chama. As cores das pétalas variam do vermelho intenso, laranja vibrante ao amarelo brilhante, criando um espetáculo de cores vibrantes e exuberantes."
     },
     {
-        num: 17,
+        num: "",
         title: "",
-        url: ""
-    },
-    {
-        num: 18,
-        title: "",
-        url: ""
+        price: "",
+        url: "",
+        imgs:[
+            "",
+        ],
     },
 ]
 
