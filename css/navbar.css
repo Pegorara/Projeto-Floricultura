@@ -44,12 +44,17 @@
     width: 2rem;
     height: 2rem;
     border-radius: 999px;
-    border: none;
+    border: 1px solid red;
+    /* border: none; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     color: #2D3648;
     cursor:pointer ;
+}
+
+.navButton:last-child{
+    border: 1px solid red;
 }
 
 #logo{

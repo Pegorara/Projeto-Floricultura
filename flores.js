@@ -209,15 +209,6 @@ const flores = [
         ],
         desc: "As pétalas das flores do Flamboyant são grandes e têm uma forma distinta, lembrando uma borboleta ou uma chama. As cores das pétalas variam do vermelho intenso, laranja vibrante ao amarelo brilhante, criando um espetáculo de cores vibrantes e exuberantes."
     },
-    {
-        num: "",
-        title: "",
-        price: "",
-        url: "",
-        imgs:[
-            "",
-        ],
-    },
 ]
 
 const floresDestaque = [flores[1], flores[5], flores[4], flores[10]];
