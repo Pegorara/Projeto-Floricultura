@@ -2,17 +2,21 @@ const catalogo = document.getElementById("listaCatalogo");
 let allPages;
 let currentPage = 1;
 let pages = 1;
-
+let numFlor;
 
 function renderCatalogo(){
     let newPage = createPage(pages);
     for(let flor of flores){
+        numFlor = flor.num;
         if(flor.title !== ""){
             newPage.children[0].appendChild(renderCard(flor));
             if(flor.num%8 === 0){
                 catalogo.appendChild(newPage);
-                pages++;
-                newPage = createPage(pages);
+                if(numFlor != flores.length){
+                    pages++;
+                    newPage = createPage(pages);
+                    alert(numFlor + " " + flores.length);
+                }
             }
         }
         if(flor.title === ""){
