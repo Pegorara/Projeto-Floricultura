@@ -44,8 +44,7 @@
     width: 2rem;
     height: 2rem;
     border-radius: 999px;
-    border: 1px solid red;
-    /* border: none; */
+    border: none;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -53,7 +52,7 @@
     cursor:pointer ;
 }
 
-.navButton:last-child{
+.navButton:last-chil{
     border: 1px solid red;
 }
 

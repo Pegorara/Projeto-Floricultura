@@ -15,7 +15,6 @@ function renderCatalogo(){
                 if(numFlor != flores.length){
                     pages++;
                     newPage = createPage(pages);
-                    alert(numFlor + " " + flores.length);
                 }
             }
         }
