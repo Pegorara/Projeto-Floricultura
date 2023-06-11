@@ -88,6 +88,10 @@
     padding-top: 20px;
 }
 
+.container .login-form .signup-text p{
+    margin: 0;
+}
+
 .container .login-form .signup-text button, .signup-text-adm button{
     color: var(--marrom);
     background-color: transparent;

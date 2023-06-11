@@ -79,6 +79,6 @@
 
 #buttonFooterProduto {
   border-radius: 5px;
-  background: #2D3648;
-  color: white;
+  background: var(--verde);
+  color: #000;
 }
