@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: space-between;
     width: 60vw;
-    padding: 0
 }
 
 #menu{
@@ -58,7 +57,6 @@
 
 #logo{
     width: 15rem;
-    margin-left: 1rem;
 }
 
 #loginMobile{

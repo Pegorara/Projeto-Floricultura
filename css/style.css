@@ -9,7 +9,6 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 @font-face {
   font-family: "Taldas";
@@ -26,16 +25,15 @@
 body{
   display: flex;
   flex-direction: column;
+  font-family: 'Inter', sans-serif;
+
 }
 
 * {
-  font-family: Inter;
   scroll-behavior: smooth;
+  outline: 2px solid red !important;
 }
 
-h2, h3{
-  font-family: "Dancing Script";
-}
 .divElipse {
   display: flex; 
   gap: 10px; 

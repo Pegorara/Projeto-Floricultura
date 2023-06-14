@@ -68,13 +68,13 @@ function changeLoginAdm(){
 function changeTheme(){
 
     if(theme === "white"){
-        document.querySelector("body").style.backgroundColor = "black";
-        document.querySelector("body").style.color = "white";
+        document.querySelector("body").style.backgroundColor = "#121212";
+        document.querySelector("body").style.color = "#FFF";
         document.getElementById("logo").style.filter = "invert(100%)"
         theme = "black"
     }else{
-        document.querySelector("body").style.backgroundColor = "white";
-        document.querySelector("body").style.color = "black";
+        document.querySelector("body").style.backgroundColor = "#FFF";
+        document.querySelector("body").style.color = "#121212";
         document.getElementById("logo").style.filter = "invert(0)";
         theme = "white";
     }
