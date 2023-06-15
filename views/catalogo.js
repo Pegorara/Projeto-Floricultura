@@ -1,4 +1,5 @@
 const catalogo = document.getElementById("listaCatalogo");
+
 let allPages;
 let currentPage = 1;
 let pages = 1;

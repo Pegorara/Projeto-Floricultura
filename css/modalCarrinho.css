@@ -72,3 +72,18 @@
   align-self: center;
   padding: 0 5px;
 }
+
+.contentCart{
+  display: flex;
+  width: 70%;
+}
+
+.contentCart input{
+  width: 3rem;
+}
+
+.imgCart{
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+}
