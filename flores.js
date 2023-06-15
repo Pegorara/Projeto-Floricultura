@@ -260,7 +260,10 @@ function renderCard(flor) {
 
 
 function addToCart(flor) {
-    carrinho.push(flor);
+    const exist = false;
+    carrinho.map((f) => f.num == flor.num?exist=true:null);
+    if(!exist){
+        carrinho.push(flor);
+    }
     reloadCart();
-    console.log(carrinho)
   }
