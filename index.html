@@ -39,7 +39,7 @@
         </div>
     </section>
 
-    <section class="w3-container" id="catalogo">
+    <section id="catalogo">
         <h2>Catálogo</h2>
         <div class="carrosselCatalogo">
             <button class="passar" onClick="backPage()">&lt;</button>
@@ -51,199 +51,232 @@
 
     </section>
 
-    <section style="width: 70vw; margin: 0 auto;" id="sobreNos">
+    <section style="margin: 0 auto;" id="sobreNos">
         <h2>Sobre Nós</h2>
-        <p> Somos uma empresa brasileira que se dedica à exportação
-            de flores tropicais de alta qualidade para clientes
-            em todo o mundo. Com anos de experiência e uma equipe
-            altamente qualificada, garantimos que nossos
-            clientes recebam as melhores flores tropicais do Brasil.</p>
+        <div class="contentSN">
+            <div class="conteudoSN">
+                <div class="SNimg">
+                    
+                </div>
+                <p>Oferecemos serviços de entrega de flores tropicais para exportação.
+                    Nosso objetivo é garantir que nossos clientes recebam suas flores tropicais com segurança e rapidez
+                    em todo o mundo.
+                </p>
+            </div>
+            <div class="conteudoSN">
+                <div class="SNimg">
+
+                </div>
+                <p> Oferecemos também o serviço de assessoria de exportação de flores tropicais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin: 0 auto;" id="contato">
+        <h2>Contato</h2>
+        <div class="contato">
+            <div class="conteudoForm">
+                <form class="formulario">
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Assunto">
+                    <textarea name="" id="" cols="30" rows="8" placeholder="Mensagem"></textarea>
+                    <button type="submit" id="botaoForm">Enviar</button>
+                </form>
+            </div>
+            <div class="redes">
+                <p style="font-size: large;"><i class="fa-brands fa-whatsapp fa-xl"></i> wa.me/4002-8922</p>
+                <p style="font-size: large;"><i class="fa-brands fa-twitter fa-xl"></i> @taldas_flores</p>
+                <p style="font-size: large;"><i class="fa-brands fa-instagram fa-xl"></i> @taldas_flores</p>
+                <p style="font-size: large;"><i class="fa-brands fa-facebook fa-xl"></i> fb.me/taldas_flores</p>
+            </div>
+        </div>
     </section>
 
 
-    
 
-        <!-- Modais aqui -->
-        <button id="carrinho" onclick="showCarrinho()"><img src="./images/svgs/outline-shopping-cart.svg"></button>
 
-        <!-- Sidebar -->
-        <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-right w3-card" id="mySidebar">
-            <div id="headerSidebar">
-                <span id="tituloSidebar">Carrinho</span>
-                <span id="retangulo"></span>
-                <button onclick="showCarrinho()" id="fecharCarrinho">&times;</button>
+    <!-- Modais aqui -->
+    <button id="carrinho" onclick="showCarrinho()"><img src="./images/svgs/outline-shopping-cart.svg"></button>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-right w3-card" id="mySidebar">
+        <div id="headerSidebar">
+            <span id="tituloSidebar">Carrinho</span>
+            <span id="retangulo"></span>
+            <button onclick="showCarrinho()" id="fecharCarrinho">&times;</button>
+        </div>
+        <div class="produtoCarrinho w3-card">
+            <img class="fotoProdutoCarrinho" src="./images/flowers/astromelia/001.jpg" alt="">
+            <div class="infosProdutoCarrinho">
+                <b>Astromélia</b>
+                <span>R$ 30,00</span>
             </div>
-            <div class="produtoCarrinho w3-card">
-                <img class="fotoProdutoCarrinho" src="./images/flowers/astromelia/001.jpg" alt="">
-                <div class="infosProdutoCarrinho">
-                    <b>Astromélia</b>
-                    <span>R$ 30,00</span>
-                </div>
 
-                <div class="controles">
-                    <span>-</span>
-                    <span>1</span>
-                    <span>+</span>
-                </div>
-
-                <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
+            <div class="controles">
+                <span>-</span>
+                <span>1</span>
+                <span>+</span>
             </div>
-            <div class="produtoCarrinho w3-card">
-                <img class="fotoProdutoCarrinho" src="./images/flowers/bastoes/001.jpg" alt="">
-                <div class="infosProdutoCarrinho">
-                    <b>Batões</b>
-                    <span>R$ 30,00</span>
-                </div>
 
-                <div class="controles">
-                    <span>-</span>
-                    <span>1</span>
-                    <span>+</span>
-                </div>
+            <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
+        </div>
+        <div class="produtoCarrinho w3-card">
+            <img class="fotoProdutoCarrinho" src="./images/flowers/bastoes/001.jpg" alt="">
+            <div class="infosProdutoCarrinho">
+                <b>Batões</b>
+                <span>R$ 30,00</span>
+            </div>
 
-                <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
+            <div class="controles">
+                <span>-</span>
+                <span>1</span>
+                <span>+</span>
+            </div>
+
+            <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
+        </div>
+    </div>
+
+
+    <div id="modalProduto" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="" id="headerModalProduto">
+                <p id="nomeProduto"></p>
+
+                <button class="w3-button" id="fecharModalProduto">&times;</button>
+            </div>
+            <div id="imgModalProduto">
+                <button id="btnNext" class="w3-button">&gt;</button>
+                <button id="btnPrevious" class="w3-button">&lt;</button>
+            </div>
+            <div class="w3-container">
+                <h4>Descrição</h4>
+                <p id="descricaoProduto">
+                </p>
+            </div>
+            <footer id="footerModalProduto">
+                <p id="precoModalProduto"></p>
+                <button id="buttonFooterProduto">
+                    <img src="/images/svgs/outline-shopping-cart.svg" alt="">
+                    Adicionar ao carrinho
+                </button>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- Modal Login -->
+    <section id="modalLogin" style="display: none;" class="w3-display-middle">
+        <div class="container">
+            <div class="login-form">
+                <button class="close" onclick="renderModalLogin()">&times;</button>
+                <div class="title">Login
+                    <div class="signup-text-adm">
+                        <button href="#" onClick="changeLoginAdm()"><i class="fa-solid fa-user-gear fa-xs"></i></button>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="input-box">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+                    <div class="forgot"><a href="#">Esqueceu a senha?</a></div>
+                    <div class="input-box">
+                        <input type="submit" value="Entrar">
+                    </div>
+                </form>
+                <div class="signup-text">
+                    <button href="#" onClick="changeLogin()">Cadastre-se</button>
+                </div>
+            </div>
+            <div class="img-login">
+                <img src="" alt="">
             </div>
         </div>
+    </section>
 
+    <!-- Modal Login Adm-->
+    <section id="modalLoginAdm" style="display: none;" class="w3-display-middle">
+        <div class="container">
+            <div class="login-form">
+                <button class="close" onclick="closeLoginAdm()">&times;</button>
+                <div class="title">Login Admin</div>
+                <form action="#">
+                    <div class="input-box">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <input type="text" placeholder="Usuário" required>
+                    </div>
 
-        <div id="modalProduto" class="w3-modal">
-            <div class="w3-modal-content">
-                <div class="" id="headerModalProduto">
-                    <p id="nomeProduto"></p>
-
-                    <button class="w3-button" id="fecharModalProduto">&times;</button>
-                </div>
-                <div id="imgModalProduto">
-                    <button id="btnNext" class="w3-button">&gt;</button>
-                    <button id="btnPrevious" class="w3-button">&lt;</button>
-                </div>
-                <div class="w3-container">
-                    <h4>Descrição</h4>
-                    <p id="descricaoProduto">
-                   </p>
-                </div>
-                <footer id="footerModalProduto">
-                    <p id="precoModalProduto"></p>
-                    <button id="buttonFooterProduto">
-                        <img src="/images/svgs/outline-shopping-cart.svg" alt="">
-                        Adicionar ao carrinho
-                    </button>
-                </footer>
+                    <div class="input-box">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+                    <div class="forgot"><a href="#">Esqueceu a senha?</a></div>
+                    <div class="input-box">
+                        <input type="submit" value="Entrar">
+                    </div>
+                    <div class="signup-text">
+                        <p>Não é admin?<button href="#" onClick="changeLoginAdm()">Voltar</button></p>
+                    </div>
+                </form>
+            </div>
+            <div class="img-login">
+                <img src="" alt="">
             </div>
         </div>
+    </section>
 
-
-        <!-- Modal Login -->
-        <section id="modalLogin" style="display: none;" class="w3-display-middle">
-            <div class="container">
-                <div class="login-form">
-                    <button class="close" onclick="renderModalLogin()">&times;</button>
-                    <div class="title">Login
-                        <div class="signup-text-adm">
-                            <button href="#" onClick="changeLoginAdm()"><i class="fa-solid fa-user-gear fa-xs"></i></button>
-                        </div>
+    <!-- Modal Cadastro -->
+    <section id="modalCadastro" style="display: none" class="w3-display-middle">
+        <div class="container">
+            <div class="login-form">
+                <button class="close" onClick="closeRegister()">&times;</button>
+                <div class="title">Cadastro</div>
+                <form action="#">
+                    <div class="input-box">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Nome Completo" required>
                     </div>
-                    <form action="#">
-                        <div class="input-box">
-                            <i class="fa fa-envelope"></i>
-                            <input type="email" placeholder="Email" required>
-                        </div>
-
-                        <div class="input-box">
-                            <i class="fa fa-lock"></i>
-                            <input type="password" placeholder="Senha" required>
-                        </div>
-                        <div class="forgot"><a href="#">Esqueceu a senha?</a></div>
-                        <div class="input-box">
-                            <input type="submit" value="Entrar">
-                        </div>
-                    </form>
-                    <div class="signup-text">
-                        <button href="#" onClick="changeLogin()">Cadastre-se</button>
+                    <div class="input-box">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
                     </div>
-                </div>
-                <div class="img-login">
-                    <img src="" alt="">
+                    <div class="input-box">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Senha" id="password" required
+                            onchange="validatePassword();">
+                    </div>
+                    <div class="input-box">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Confirme a senha" id="confirm_password" required
+                            onchange="validatePassword();">
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="Registrar">
+                    </div>
+                </form>
+                <div class="signup-text">
+                    <p>Já tem conta?<button href="#" onClick="changeLogin()">Fazer login</button></p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Modal Login Adm-->
-        <section id="modalLoginAdm" style="display: none;" class="w3-display-middle">
-            <div class="container">
-                <div class="login-form">
-                    <button class="close" onclick="closeLoginAdm()">&times;</button>
-                    <div class="title">Login Admin</div>
-                    <form action="#">
-                        <div class="input-box">
-                            <i class="fa-solid fa-user-gear"></i>
-                            <input type="text" placeholder="Usuário" required>
-                        </div>
-    
-                        <div class="input-box">
-                            <i class="fa fa-lock"></i>
-                            <input type="password" placeholder="Senha" required>
-                        </div>
-                        <div class="forgot"><a href="#">Esqueceu a senha?</a></div>
-                        <div class="input-box">
-                            <input type="submit" value="Entrar">
-                        </div>
-                        <div class="signup-text">
-                            <p>Não é admin?<button href="#" onClick="changeLoginAdm()">Voltar</button></p>
-                        </div>
-                    </form>
-                </div>
-                <div class="img-login">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </section>
-
-        <!-- Modal Cadastro -->
-        <section id="modalCadastro" style="display: none" class="w3-display-middle">
-            <div class="container">
-                <div class="login-form">
-                    <button class="close" onClick="closeRegister()">&times;</button>
-                    <div class="title">Cadastro</div>
-                    <form action="#">
-                        <div class="input-box">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" placeholder="Nome Completo" required>
-                        </div>
-                        <div class="input-box">
-                            <i class="fa fa-envelope"></i>
-                            <input type="email" placeholder="Email" required>
-                        </div>
-                        <div class="input-box">
-                            <i class="fa fa-lock"></i>
-                            <input type="password" placeholder="Senha" id="password" required
-                                onchange="validatePassword();">
-                        </div>
-                        <div class="input-box">
-                            <i class="fa fa-lock"></i>
-                            <input type="password" placeholder="Confirme a senha" id="confirm_password" required
-                                onchange="validatePassword();">
-                        </div>
-                        <div class="input-box">
-                            <input type="submit" value="Registrar">
-                        </div>
-                    </form>
-                    <div class="signup-text">
-                        <p>Já tem conta?<button href="#" onClick="changeLogin()">Fazer login</button></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- SCRIPTS -->
-        <script src="./views/modalProduto.js"></script>
-        <script src="flores.js"></script>
-        <script src="/controller/carrinho.js"></script>
-        <script src="./views/destaques.js"></script>
-        <script src="./views/header.js"></script>
-        <script src="./views/carrossel.js"></script>
-        <script src="./views/catalogo.js"></script>
-        <script src="./views/sidebarCarrinho.js"></script>
+    <!-- SCRIPTS -->
+    <script src="./views/modalProduto.js"></script>
+    <script src="flores.js"></script>
+    <script src="/controller/carrinho.js"></script>
+    <script src="./views/destaques.js"></script>
+    <script src="./views/header.js"></script>
+    <script src="./views/carrossel.js"></script>
+    <script src="./views/catalogo.js"></script>
+    <script src="./views/sidebarCarrinho.js"></script>
 </body>
 
 </html>

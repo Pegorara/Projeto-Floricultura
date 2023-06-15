@@ -81,4 +81,10 @@
   border-radius: 5px;
   background: var(--verde);
   color: #000;
+  cursor: pointer;
+
+}
+
+#buttonFooterProduto:hover {
+  background-color: #b8d178;
 }

@@ -6,10 +6,6 @@
   width: calc(70vw);
 }
 
-#destaques h2{
-  font-family: Inter;
-}
-
 #listaDestaque{
   display: flex;
   justify-content: space-around;
