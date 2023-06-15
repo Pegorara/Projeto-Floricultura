@@ -70,8 +70,8 @@ function addItem(flor, qtd) {
   calcTotal();
 }
 
-function removeItem(flor, qtd) {
- 
+function removeItem(flor) {
+  if(flor.qntd <= 0) flor.qntd = 1;
   flores.map((f) => (f.num == flor.num ? (flor.qntd -= 1) : null));
   calcTotal();
 }
@@ -83,7 +83,9 @@ function calcTotal() {
 }
 
 function remove(flor) {
+  flor.qntd = 0;
   carrinho = carrinho.filter((v, k) => v.num != flor.num);
+  flores.map((f) => (f.num == flor.num ? f.qntd = 0: null));
   calcTotal();
   reloadCart()
 }
