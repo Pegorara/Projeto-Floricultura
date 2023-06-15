@@ -62,7 +62,7 @@ body{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.233);
 }
 
-#header,#carrosselLocal, #destaques, #catalogo, #sobreNos, #contato{
+#header,#carrosselLocal, #destaques, #catalogo, #sobreNos, #contatoLocal{
   width: 70vw;
   
 }

@@ -71,6 +71,7 @@ function changeTheme(){
         document.querySelector("body").style.backgroundColor = "#121212";
         document.querySelector("body").style.color = "white";
         document.getElementById("logo").style.filter = "invert(100%)"
+        document.getElementById("mySidebar").style.color = "black";
         theme = "black"
     }else{
         document.querySelector("body").style.backgroundColor = "white";
