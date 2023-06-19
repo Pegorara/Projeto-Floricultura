@@ -18,9 +18,7 @@
   
   .SNimg{
     
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
+      background-size: cover;
       width: 30vw;
       height: 20em;
       max-height: 15em;
