@@ -87,3 +87,38 @@
   height: 5rem;
   background-size: cover;
 }
+
+.titlePrice{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 0;
+  width: 55%;
+}
+
+.titlePrice h4{
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.produtoCarrinho{
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+  display: flex;
+}
+
+.qtdLocal{
+  border: 0.2px solid black;
+  display: flex;
+  height: 2rem;
+  margin: auto;
+}
+
+.qtdLocal button, .qtdLocal input{
+  border: none
+}
+
+.qtdLocal input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
