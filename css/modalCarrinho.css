@@ -119,6 +119,16 @@
   border: none
 }
 
+.qtdLocal button{
+  cursor: pointer;
+}
+
 .qtdLocal input[type="number"]::-webkit-inner-spin-button{
   -webkit-appearance: none;
+}
+
+.del{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

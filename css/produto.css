@@ -1,5 +1,5 @@
 .produto{
-    width: 12.5rem;
+    width: 100%;
     max-width: 12rem;
     display: flex;
     flex-direction: column;

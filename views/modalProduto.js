@@ -5,6 +5,8 @@ const imgModalProduto = document.getElementById('imgModalProduto');
 const fecharModalProduto = document.getElementById('fecharModalProduto');
 const descricaoProduto = document.getElementById('descricaoProduto');
 const precoModalProduto = document.getElementById('precoModalProduto');
+const buttonFooterProduto =  document.getElementById("buttonFooterProduto");
+
 
 let currentFlor;
 let  imgSelect = 0;
@@ -40,4 +42,5 @@ function renderModal(flor){
     imgModalProduto.style.backgroundImage = `url('${flor.imgs[imgSelect]}')`
     descricaoProduto.innerText = `${flor.desc}`;
     precoModalProduto.innerText = `R$${flor.price.toFixed(2).replace(".",",")}`;
+    buttonFooterProduto.addEventListener('click', ()=>{addToCart(flor)})
 }

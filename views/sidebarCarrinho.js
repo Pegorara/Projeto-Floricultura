@@ -39,6 +39,7 @@ function renderCardCat(flor){
   btn2.addEventListener("click", ()=>{addItem(flor); inputNum.value = flor.qntd});
   const del = document.createElement('button');
   del.innerHTML = "🗑";
+  del.classList.add("del");
   del.addEventListener('click',()=>{remove(flor)})
 
   qtdLocal.appendChild(btn1);

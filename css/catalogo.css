@@ -1,5 +1,7 @@
 #catalogo{ 
-    margin: 0 auto;
+    min-width: 430px;
+    max-width: 870px;
+    margin: auto;
 }
 
 #catalogo .carrosselCatalogo{
