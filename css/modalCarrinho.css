@@ -76,6 +76,7 @@
 .contentCart{
   display: flex;
   width: 70%;
+  align-items: center;
 }
 
 .contentCart input{
@@ -128,7 +129,12 @@
 }
 
 .del{
+  height: fit-content;
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.totalLocal{
+  display: flex;
 }

@@ -58,7 +58,6 @@ function renderCardCat(flor){
 function reloadCart(){
   prods.innerHTML = "";
   for(let item of carrinho){
-    console.log(item)
     prods.appendChild(renderCardCat(item));
   }
 }
@@ -82,7 +81,6 @@ function removeItem(flor) {
 function calcTotal() {
   const total = carrinho.map((f) => f.qntd * f.price).reduce(sum, 0);
   vTotal.innerHTML = total;
-  console.log(total);
 }
 
 function remove(flor) {

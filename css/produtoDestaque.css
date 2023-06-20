@@ -1,14 +1,22 @@
 #destaques{
-  margin: 0 auto 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: calc(70vw);
+  width: 100vw;
 }
 
 #listaDestaque{
   display: flex;
-  justify-content: space-around;
+  overflow: scroll;
+}
+
+#listaDestaque div{
+  width: 50vw;
+  align-items: center;
+}
+
+#listaDestaque div div:nth-child(1){
+  background-size: contain;
 }
 
 #listaDestaque::-webkit-scrollbar{
@@ -22,4 +30,10 @@
 #listaDestaque::-webkit-scrollbar-thumb{
   background-color:var(--marrom);
   border-radius: 20px;
+}
+
+@media (max-width: 992px){
+  #destaques{
+    width: 70vw;
+  }
 }

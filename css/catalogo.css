@@ -1,15 +1,7 @@
-#catalogo{ 
-    min-width: 430px;
-    max-width: 870px;
-    margin: auto;
-}
-
 #catalogo .carrosselCatalogo{
-    display: grid;
-    grid-template-columns: 0.3fr 10fr 0.3fr;
+    display: flex;
     align-items: center;
-    gap: 1rem;
-    height: 100vh;
+    justify-content: space-between;
 }
 
 
@@ -32,7 +24,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: inherit;
+    height: max-content;
     overflow: hidden;
 }
 
@@ -44,3 +36,30 @@
     row-gap: 1rem;
     column-gap: 1rem;
 }
+
+@media (max-width: 992px){
+    #catalogo{
+        width: 85vw;
+    }
+    .pageContent{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-template-rows: 4fr 4fr;
+        padding: 1rem 0;
+    }
+    .passar{
+        padding: 1rem .2rem;
+        border: none;
+        font-size: .8rem;
+    }
+
+    #catalogo .carrosselCatalogo{
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+
+    }
+
+  }
+  
