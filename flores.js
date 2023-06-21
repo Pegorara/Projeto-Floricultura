@@ -227,7 +227,7 @@ const flores = [
   },
 ];
 
-const floresDestaque = [flores[1], flores[5], flores[4], flores[10]];
+const floresDestaque = [flores[1], flores[5], flores[4], flores[10], flores[7]];
 
 function renderCard(flor) {
   const produto = document.createElement("div");

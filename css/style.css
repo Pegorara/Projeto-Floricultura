@@ -62,7 +62,7 @@ body{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.233);
 }
 
-section, #carrossel {
+section, #carrossel, #destaques {
   width: 70vw;
   margin: 0 auto;
 }
