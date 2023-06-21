@@ -1,3 +1,4 @@
+
 #catalogo .carrosselCatalogo{
     display: flex;
     align-items: center;
@@ -17,7 +18,7 @@
 
 .addToCart:active{
     background-color: rgb(0, 143, 31);
-  }
+}
 
 #listaCatalogo{
     display: flex;
@@ -26,6 +27,7 @@
     flex-wrap: wrap;
     height: max-content;
     overflow: hidden;
+    padding: 1.2rem 0;
 }
 
 .pageContent{
