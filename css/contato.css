@@ -1,8 +1,6 @@
 .contato {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-
 }
 
 
@@ -21,7 +19,7 @@ textarea {
 .redes {
     display: flex;
     justify-content: center;
-    margin-right: 15s%;
+    margin-right: 15%;
 }
 
 #botaoForm {
@@ -41,3 +39,10 @@ textarea {
     transform: translateY(5px);
     box-shadow: 0px 0px 0px 0px #a29bfe;
 }
+
+@media (max-width: 992px){
+    .contato{
+        flex-direction: column;
+    }
+  }
+  

@@ -26,9 +26,9 @@
             </div>
         </div>
     </header>
-    <section id="carrosselLocal" style="margin: 0 auto;">
+    <section id="carrosselLocal">
         <div class="carrossel">
-            <img id="imageLocal">
+            <div id="imageLocal"></div>
             <div id="buttonsLocal"></div>
         </div>
     </section>
@@ -43,15 +43,13 @@
         <h2>Catálogo</h2>
         <div class="carrosselCatalogo">
             <button class="passar" onClick="backPage()">&lt;</button>
-            <div id="listaCatalogo">
-
-            </div>
+            <div id="listaCatalogo"></div>
             <button class="passar" onClick="nextPage()">&gt;</button>
         </div>
 
     </section>
 
-    <section style="margin: 0 auto;" id="sobreNos">
+    <section id="sobreNos">
         <h2>Sobre Nós</h2>
         <div class="contentSN">
             <div class="conteudoSN">
@@ -72,7 +70,7 @@
         </div>
     </section>
 
-    <section style="margin: 0 auto;" id="contatoLocal">
+    <section id="contatoLocal">
         <h2>Contato</h2>
         <div class="contato">
             <div class="conteudoForm">
@@ -106,39 +104,9 @@
             <span id="retangulo"></span>
             <button onclick="showCarrinho()" id="fecharCarrinho">&times;</button>
         </div>
-        <div class="produtoCarrinho w3-card">
-            <img class="fotoProdutoCarrinho" src="./images/flowers/astromelia/001.jpg" alt="">
-            <div class="infosProdutoCarrinho">
-                <b>Astromélia</b>
-                <span>R$ 30,00</span>
-            </div>
-
-            <div class="controles">
-                <span>-</span>
-                <span>1</span>
-                <span>+</span>
-            </div>
-
-            <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
-        </div>
-        <div class="produtoCarrinho w3-card">
-            <img class="fotoProdutoCarrinho" src="./images/flowers/bastoes/001.jpg" alt="">
-            <div class="infosProdutoCarrinho">
-                <b>Batões</b>
-                <span>R$ 30,00</span>
-            </div>
-
-            <div class="controles">
-                <span>-</span>
-                <span>1</span>
-                <span>+</span>
-            </div>
-
-            <button class="excluirItem"><img src="./images/svgs/baseline-delete-outline.svg"></button>
-        </div>
         <div id="prods">
         </div>
-        <div><h2>Total</h2><h2 id="vTotal"></h2></div>
+        <div class="totalLocal"><p>Total: R$</p><p id="vTotal"></p></div>
     </div>
 
 

@@ -16,6 +16,7 @@ function renderCardCat(flor){
   const divContentCard = document.createElement("div");
   divContentCard.classList.add("contentCart");
   const titlePrice = document.createElement("div");
+  titlePrice.classList.add("titlePrice");
   const title = document.createElement("h4");
   title.innerHTML = flor.title;
   const price = document.createElement("h4");
@@ -23,6 +24,7 @@ function renderCardCat(flor){
   titlePrice.appendChild(title);
   titlePrice.appendChild(price);
   const qtdLocal = document.createElement("div");
+  qtdLocal.classList.add("qtdLocal");
   const btn1 = document.createElement('button')
   btn1.innerHTML = "-";
   btn1.addEventListener("click", ()=>{removeItem(flor);inputNum.value = flor.qntd});
@@ -30,13 +32,14 @@ function renderCardCat(flor){
   const inputNum = document.createElement("input");
   inputNum.setAttribute("type", "number");
   inputNum.setAttribute("value", flor.qntd);
-  inputNum.addEventListener('change',({target})=>{addItem(flor,target.value); calcTotal()})
+  inputNum.addEventListener('change',({target})=>{if(target.value<0){target.value=0}else{addItem(flor,target.value)}; calcTotal()})
   qtdLocal.appendChild(inputNum);
   const btn2 = document.createElement('button');
   btn2.innerHTML = "+";
   btn2.addEventListener("click", ()=>{addItem(flor); inputNum.value = flor.qntd});
   const del = document.createElement('button');
   del.innerHTML = "🗑";
+  del.classList.add("del");
   del.addEventListener('click',()=>{remove(flor)})
 
   qtdLocal.appendChild(btn1);
@@ -55,7 +58,6 @@ function renderCardCat(flor){
 function reloadCart(){
   prods.innerHTML = "";
   for(let item of carrinho){
-    console.log(item)
     prods.appendChild(renderCardCat(item));
   }
 }
@@ -63,7 +65,7 @@ function reloadCart(){
 
 function addItem(flor, qtd) {
   if (qtd) {
-    flores.map((f) => (f.num == flor.num ? (flor.qntd = qtd) : null));
+    flores.map((f) => (f.num == flor.num ? (flor.qntd = Number(qtd)) : null));
   } else {
     flores.map((f) => (f.num == flor.num ? (flor.qntd += 1) : null));
   }
@@ -79,7 +81,6 @@ function removeItem(flor) {
 function calcTotal() {
   const total = carrinho.map((f) => f.qntd * f.price).reduce(sum, 0);
   vTotal.innerHTML = total;
-  console.log(total);
 }
 
 function remove(flor) {

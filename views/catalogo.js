@@ -4,23 +4,49 @@ let allPages;
 let currentPage = 1;
 let pages = 1;
 let numFlor;
+let wSize = window.innerWidth;
+
+window.addEventListener("resize", ()=>
+    {
+        wSize=window.innerWidth;
+        pages = 1;
+        catalogo.innerHTML = "";
+        renderCatalogo();
+    });
+
 
 function renderCatalogo(){
     let newPage = createPage(pages);
     for(let flor of flores){
         numFlor = flor.num;
-        if(flor.title !== ""){
-            newPage.children[0].appendChild(renderCard(flor));
-            if(flor.num%8 === 0){
-                catalogo.appendChild(newPage);
-                if(numFlor != flores.length){
-                    pages++;
-                    newPage = createPage(pages);
+        if(wSize > 992){
+            if(flor.title !== ""){
+                newPage.children[0].appendChild(renderCard(flor));
+                if(flor.num%8 === 0){
+                    catalogo.appendChild(newPage);
+                    if(numFlor != flores.length){
+                        pages++;
+                        newPage = createPage(pages);
+                    }
                 }
             }
-        }
-        if(flor.title === ""){
-            catalogo.appendChild(newPage);
+            if(flor.title === ""){
+                catalogo.appendChild(newPage);
+            }
+        }else{
+            if(flor.title !== ""){
+                newPage.children[0].appendChild(renderCard(flor));
+                if(flor.num%4 === 0){
+                    catalogo.appendChild(newPage);
+                    if(numFlor != flores.length){
+                        pages++;
+                        newPage = createPage(pages);
+                    }
+                }
+            }
+            if(flor.title === ""){
+                catalogo.appendChild(newPage);
+            }
         }
     }
     showPage();
