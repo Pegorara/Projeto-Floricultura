@@ -7,8 +7,9 @@
 #listaDestaque{
   display: flex;
   overflow: scroll;
-  width: 100vw;
-  padding: 1rem 0
+  width: 100%;
+  padding: 1rem 0;
+  justify-content: space-between;
 }
 /* 
 #listaDestaque div{
@@ -38,9 +39,9 @@
     width: 70vw;
   }
   #listaDestaque{
-    width: 70vw;
+    width: 100%;
   }
-  #listaDestaque div{
-    width: 50vw;
+  #listaDestaque .produto{
+    width: 100%;
   }
 }
