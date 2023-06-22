@@ -12,7 +12,7 @@
     font-size: 1.5rem;
 }
 
-.passar:active{
+.passar:hover{
     background-color: rgba(7, 206, 7, 0.541);
 }
 
