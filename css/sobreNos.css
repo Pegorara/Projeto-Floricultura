@@ -1,25 +1,39 @@
-.contentSN{
-    display: flex;
+.contentSN {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.conteudoSN {
+  width: 30vw;
+}
+
+.conteudoSN:nth-child(1) .SNimg {
+  background-image: url("../images/AviPou.png");
+}
+
+.conteudoSN:nth-child(2) .SNimg {
+  background-image: url("../images/A.jpg");
+}
+
+.SNimg {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30vw;
+  height: 20em;
+}
+@media (max-width: 992px) {
+  .contentSN {
+    flex-direction: column;
+  }
+  .conteudoSN {
     width: 100%;
-    justify-content: space-between;
   }
-  
-  .conteudoSN{
-    width: 30vw;
+
+  .SNimg {
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
   }
-  
-  .conteudoSN:nth-child(1) .SNimg{
-    background-image: url("../images/AviPou.png");
-  }
-  
-  .conteudoSN:nth-child(2) .SNimg{
-    background-image: url("../images/A.jpg");
-  }
-  
-  .SNimg{
-    
-      background-size: cover;
-      width: 30vw;
-      height: 20em;
-      max-height: 15em;
-  }
+}

@@ -1,9 +1,6 @@
 .contato {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    margin-bottom: 3rem;
-
 }
 
 .formulario,
@@ -49,3 +46,10 @@ textarea {
     transform: translateY(5px);
     box-shadow: 0px 0px 0px 0px #a29bfe;
 }
+
+@media (max-width: 992px){
+    .contato{
+        flex-direction: column;
+    }
+  }
+  

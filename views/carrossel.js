@@ -22,7 +22,7 @@ function setImgCarrossel(){
     setInterval(()=>{
         for(let imagem of images){
             imagem.num === imgCarrossel?
-            imageLocal.setAttribute("src", imagem.url):null;
+            imageLocal.style.backgroundImage = `url('${imagem.url}')`:null;
             controller();
         }
         

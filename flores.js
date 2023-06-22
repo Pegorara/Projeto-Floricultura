@@ -227,7 +227,7 @@ const flores = [
   },
 ];
 
-const floresDestaque = [flores[1], flores[5], flores[4], flores[10]];
+const floresDestaque = [flores[1], flores[5], flores[4], flores[10], flores[7]];
 
 function renderCard(flor) {
   const produto = document.createElement("div");
@@ -243,14 +243,14 @@ function renderCard(flor) {
   p.innerText = flor.title;
   const div = document.createElement("div");
   div.classList.add("valueLocal");
-  const h4 = document.createElement("h4");
-  h4.innerText = `R$${flor.price.toFixed(2).replace(".", ",")}`;
+  const price = document.createElement("p");
+  price.innerText = `R$${flor.price.toFixed(2).replace(".", ",")}`;
   const button = document.createElement("button");
   button.classList.add("addToCart");
   button.addEventListener('click', ()=>{
     addToCart(flor);
   })
-  div.appendChild(h4);
+  div.appendChild(price);
   div.appendChild(button);
   produto.appendChild(img);
   produto.appendChild(p);

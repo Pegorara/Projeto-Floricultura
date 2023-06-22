@@ -1,5 +1,5 @@
 .produto{
-    width: 12.5rem;
+    width: 100%;
     max-width: 12rem;
     display: flex;
     flex-direction: column;
@@ -52,3 +52,26 @@
 .addToCart:active{
     background-color: rgb(0, 143, 31);
   }
+
+  @media (max-width: 992px){
+    .produto{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        height: 16rem;
+        justify-self: center;
+        padding: 0.5rem;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .imgFlor{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+  }
+  
