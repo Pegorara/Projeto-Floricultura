@@ -4,6 +4,7 @@
 
 .container{
     margin: 0 auto;
+    width: max-content;
     max-width: 850px;
     background-color: #fff;
     box-shadow: 0 0 100vw rgba(0, 0, 0, 0.596);
@@ -11,6 +12,7 @@
     align-items: center;
     padding: 2.5rem;
     border-radius: 8px;
+    position: relative;
 }
 
 .container .close{
